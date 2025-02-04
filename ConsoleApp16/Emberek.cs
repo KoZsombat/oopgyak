@@ -31,7 +31,7 @@ namespace ConsoleApp16
             foreach (Ember ember in emberek)
             {
                 result += string.Format("{0,-15:F1}{1,-18}{2,-10:F2}{3,-12}\n",
-                                        ember.testSuly, ember.testMagassag, ember.TestTomegIndex(), ember.NormalTTI());
+                                        ember.testSuly, ember.testMagassag, ember.TestTomegIndex(), (ember.NormalTTI() ? "Normális" : "Túlsúlyos"));
             }
 
             return result;
